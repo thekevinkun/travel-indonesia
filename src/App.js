@@ -1,6 +1,14 @@
+import { Header, Hero } from "./sections";
+
 const App = () => {
   return (
-    <div>App</div>
+    <>
+        <Header />
+
+        <main>
+            <Hero />
+        </main>
+    </>
   )
 }
 
