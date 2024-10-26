@@ -22,6 +22,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.025em;
+    overflow-x: hidden;
 }
 
 a {
@@ -36,24 +37,4 @@ ul {
 p {
     color: var(--color-sub-white);
     font-weight: 300;
-}
-
-.hero__padding {
-    padding: 2rem 4rem;
-}
-
-.section__padding {
-    padding: 6rem 4rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .section__padding {
-        padding: 4rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .section__padding {
-        padding: 2rem 4rem;
-    }
 }

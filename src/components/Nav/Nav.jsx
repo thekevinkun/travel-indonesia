@@ -1,35 +1,43 @@
 import "./nav.css";
 
-import { MdOutlineClose } from "react-icons/md";
+import { MdMenu } from "react-icons/md";
 
-const Nav = ({setToggleMenu}) => {
+const Nav = () => {
   return (
-    <nav className="nav">
-      <ul className="nav__list">
-        <li className="nav__list-item">
-          <a href="home">Home</a>
-        </li>
-        <li className="nav__list-item">
-          <a href="about">About Us</a>
-        </li>
-        <li className="nav__list-item">
-          <a href="services">Services</a>
-        </li>
-        <li className="nav__list-item">
-          <a href="products">Products</a>
-        </li>
-        <li className="nav__list-item">
-          <a href="contact">Contact</a>
-        </li>
-      </ul>
-
-      <div 
-        className="nav__close-menu"
-        onClick={() => setToggleMenu(false)}
+    <aside className="sidebar">  
+      <label
+        style={{display: "flex"}} 
+        for="menu-control"
       >
-        <MdOutlineClose className="close-icon" />
-      </div>
-    </nav>
+        <MdMenu
+          className="menu-icon" 
+        />
+      </label>
+
+      <input type="checkbox" id="menu-control" className="menu-control" />
+
+      <nav className="nav glassmorphism-menu">
+        <ul className="nav__list">
+          <li className="nav__list-item">
+            <a href="#home" className="nav-link">Home</a>
+          </li>
+          <li className="nav__list-item">
+            <a href="#about" className="nav-link">About Us</a>
+          </li>
+          <li className="nav__list-item">
+            <a href="#services" className="nav-link">Services</a>
+          </li>
+          <li className="nav__list-item">
+            <a href="#products" className="nav-link">Products</a>
+          </li>
+          <li className="nav__list-item">
+            <a href="#contact" className="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <label for="menu-control" className="nav__close"></label>
+      </nav>
+    </aside>
   )
 }
 

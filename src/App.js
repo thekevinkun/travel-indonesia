@@ -1,3 +1,5 @@
+import "./app.css";
+
 import { Header, Hero } from "./sections";
 
 const App = () => {
