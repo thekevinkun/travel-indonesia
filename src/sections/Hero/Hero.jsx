@@ -24,20 +24,22 @@ const getImage = () => {
         <div className="hero-overlay"></div>
 
         <div className="hero__destination hero__padding">
-          <div className="destination-location">
-            <TfiLocationPin className="location-icon"/>
-            <p className="name">{item.location}</p>
+          <div className="destination">
+            <div className="location">
+              <TfiLocationPin className="location-icon"/>
+              <p className="name">{item.location}</p>
+            </div>
+
+            <h1 className="title">{item.title}</h1>
+
+            <p className="description">{item.description}</p>
+
+            <Button 
+              type="button"
+              title="Find Out More"
+              variant="btn-yellow"
+            />
           </div>
-
-          <h1 className="destination-title">{item.title}</h1>
-
-          <p className="destination-description">{item.description}</p>
-
-          <Button 
-            type="button"
-            title="Find Out More"
-            variant="btn-yellow"
-          />
 
           <div className="social-media">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
