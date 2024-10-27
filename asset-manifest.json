@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/travel-indonesia/static/css/main.c1b67f4f.css",
+    "main.js": "/travel-indonesia/static/js/main.7e475224.js",
+    "static/media/nusa-penida.jpg": "/travel-indonesia/static/media/nusa-penida.10e8e586af8e832e570a.jpg",
+    "static/media/labuan-bajo.jpg": "/travel-indonesia/static/media/labuan-bajo.e94b8126b796865c584a.jpg",
+    "static/media/borobudur-temple.jpg": "/travel-indonesia/static/media/borobudur-temple.7ce69d4accca99aff0b7.jpg",
+    "static/media/mount-bromo.jpg": "/travel-indonesia/static/media/mount-bromo.6e7534bd38f993537917.jpg",
+    "static/media/derawan-island.jpg": "/travel-indonesia/static/media/derawan-island.c890e1b4b75597d6e175.jpg",
+    "index.html": "/travel-indonesia/index.html",
+    "main.c1b67f4f.css.map": "/travel-indonesia/static/css/main.c1b67f4f.css.map",
+    "main.7e475224.js.map": "/travel-indonesia/static/js/main.7e475224.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1b67f4f.css",
+    "static/js/main.7e475224.js"
+  ]
+}
