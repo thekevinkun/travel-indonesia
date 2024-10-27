@@ -21,13 +21,7 @@ const getImage = () => {
         }} 
         className="embla__slide__number"
       >
-        <div
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(0, 0, 0, 0.7) calc((50vw - 170px) - 340px), rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%)",
-          }}
-          className="hero-overlay"
-        ></div>
+        <div className="hero-overlay"></div>
 
         <div className="hero__destination hero__padding">
           <div className="destination-location">

@@ -88,9 +88,9 @@
     border-color: var(--btn-disabled-border-color);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
     .btn {
         padding: 0.75rem 1.5rem;
-        font-size: 0.875rem;
+        font-size: 0.925rem;
     }
 }
