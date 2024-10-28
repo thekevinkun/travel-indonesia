@@ -21,14 +21,12 @@
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
   min-width: 0;
-
 }
 
 .embla__slide__number {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--slide-height);
   user-select: none;
 }
 
@@ -87,6 +85,7 @@
 .embla__dots {
   height: 100%;
   padding: 0 6.75rem;
+  padding-bottom: 2.5rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -165,5 +164,12 @@
 
   .embla__button:hover .embla__button__svg {
     color: rgba(8, 8, 8, 1);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .embla__button {
+    width: 2.9rem;
+    height: 2.9rem;
   }
 }

@@ -1,5 +1,7 @@
 import "./hero.css";
 
+import { useEffect, useState } from "react";
+
 import { data } from "../../constants";
 import { Button, EmblaCarousel } from "../../components";
 
@@ -9,7 +11,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
 import { TfiLocationPin } from "react-icons/tfi";
 
-const getImage = () => {
+const getImage = (viewHeight) => {
   return data.destinations.map((item) => (
     <div key={item.title}className="embla__slide">
       <div 
@@ -18,6 +20,7 @@ const getImage = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundImage: `url(${item.image})`,
+          height: viewHeight
         }} 
         className="embla__slide__number"
       >
@@ -62,9 +65,27 @@ const getImage = () => {
 }
 
 const Hero = () => {
+  const [viewHeight, setViewHeight] = useState("100vh");
+
+  // useEffect(() => {
+  //   function resetHeight(){
+  //     // reset the body height to that of the inner browser
+  //     console.log(window.innerHeight + "px")
+  //     setViewHeight(window.innerHeight + "px");
+  //   }
+
+  //   // reset the height whenever the window's resized
+  //   window.addEventListener("resize", resetHeight);
+
+  //   // called to initially set the height.
+  //   resetHeight();
+
+  //   return () => window.removeEventListener('resize', resetHeight);
+  // }, [])
+
   return (
     <section className="hero">
-      <EmblaCarousel getSlides={getImage()}/>
+      <EmblaCarousel getSlides={getImage(viewHeight)}/>
     </section>
   )
 }

@@ -2,45 +2,54 @@ import "./nav.css";
 
 import { useState } from "react";
 import { MdMenu } from "react-icons/md";
+import { GiPalmTree } from "react-icons/gi";
+
 
 const Nav = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
 
   return (
-    <aside className="sidebar">  
-      <MdMenu
-        className="menu-icon" 
-        onClick={() => setToggleMenu(true)}
-      />
+    <>
+      <nav className="nav hero__padding">  
+        <div className="nav__logo">
+              <GiPalmTree className="logo-icon"/>
+              <span className="logo-name">PacoTravel</span>
+        </div>
 
-      <nav className={`glassmorphism-menu nav ${toggleMenu ? "visible" : ""}`}>
-        <ul className={`nav__list ${toggleMenu ? "visible" : ""}`}>
+        <MdMenu
+          className="menu-icon" 
+          onClick={() => setToggleMenu(true)}
+        />
+      </nav>
+
+      <div className={`glassmorphism-menu nav-menu ${toggleMenu ? "visible" : ""}`}>
+        <ul className={`nav-menu__list ${toggleMenu ? "visible" : ""}`}>
           <li 
-            className={`nav__list-item ${toggleMenu ? "visible" : ""}`}
+            className={`nav-menu__list-item ${toggleMenu ? "visible" : ""}`}
             onClick={() => setToggleMenu(false)}
           >
             <a href="#home">Home</a>
           </li>
           <li 
-            className={`nav__list-item ${toggleMenu ? "visible" : ""}`}
+            className={`nav-menu__list-item ${toggleMenu ? "visible" : ""}`}
             onClick={() => setToggleMenu(false)}
           >
             <a href="#about">About Us</a>
           </li>
           <li 
-            className={`nav__list-item ${toggleMenu ? "visible" : ""}`}
+            className={`nav-menu__list-item ${toggleMenu ? "visible" : ""}`}
             onClick={() => setToggleMenu(false)}
           >
             <a href="#services">Services</a>
           </li>
           <li 
-            className={`nav__list-item ${toggleMenu ? "visible" : ""}`}
+            className={`nav-menu__list-item ${toggleMenu ? "visible" : ""}`}
             onClick={() => setToggleMenu(false)}
           >
             <a href="#products">Products</a>
           </li>
           <li 
-            className={`nav__list-item ${toggleMenu ? "visible" : ""}`}
+            className={`nav-menu__list-item ${toggleMenu ? "visible" : ""}`}
             onClick={() => setToggleMenu(false)}
           >
             <a href="#contact">Contact</a>
@@ -48,13 +57,13 @@ const Nav = () => {
         </ul>
 
         <div 
-          className={`nav__close ${toggleMenu ? "visible" : ""}`}
+          className={`nav-menu__close ${toggleMenu ? "visible" : ""}`}
           onClick={() => setToggleMenu(false)}
         ></div>
-      </nav>
+      </div>
 
       <div className={`overlay-body ${toggleMenu ? "visible" : ""}`}></div>
-    </aside>
+    </>
   )
 }
 

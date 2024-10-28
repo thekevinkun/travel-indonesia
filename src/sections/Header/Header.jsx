@@ -1,18 +1,14 @@
 import "./header.css";
 
 import { Nav } from "../../components";
+import { Hero } from "../../sections";
 
-import { GiPalmTree } from "react-icons/gi";
 
 const Header = () => {
   return (
-    <header className="header hero__padding">
-        <div className="header__logo">
-            <GiPalmTree className="logo-icon"/>
-            <span className="logo-name">PacoTravel</span>
-        </div>
-
-        <Nav />
+    <header className="header">
+      <Nav />
+      <Hero />
     </header>
   )
 }

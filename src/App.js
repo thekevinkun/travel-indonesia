@@ -1,15 +1,11 @@
 import "./app.css";
 
-import { Header, Hero } from "./sections";
+import { Header } from "./sections";
 
 const App = () => {
   return (
     <>
-        <Header />
-
-        <main>
-            <Hero />
-        </main>
+      <Header />
     </>
   )
 }
