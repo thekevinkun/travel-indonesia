@@ -167,9 +167,24 @@
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
+  .embla__buttons {
+    padding: 2rem 1.5rem;
+  }
+
   .embla__button {
     width: 2.9rem;
     height: 2.9rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .embla__buttons {
+    padding: 1.5rem;
+  }
+
+  .embla__button {
+    width: 2.6rem;
+    height: 2.6rem;
   }
 }

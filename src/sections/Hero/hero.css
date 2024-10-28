@@ -1,5 +1,7 @@
 .hero {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -103,7 +105,7 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
     .hero .hero__destination {
         max-width: 100%;
     }
@@ -131,5 +133,44 @@
     .destination .description {
         font-size: 0.875rem;
         max-width: 420px;
+    }
+
+    .hero__destination .social-media {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .destination .btn {
+        margin-top: 2rem;
+    }
+
+    .location .location-icon {
+        font-size: 1.15rem;
+    }
+
+    .location .name {
+        font-size: 0.75rem;
+    }
+
+    .destination .title {
+        margin-top: 0.85rem;
+        font-size: 2.15rem;
+    }
+
+    .destination .description {
+        margin-top: 0.55rem;
+        font-size: 0.75rem;
+        max-width: 260px;
+    }
+    
+    .hero__destination .social-media {
+        gap: 16px;
+        padding: 1.5rem;
+    }
+
+    .hero__destination .social-media a {
+        color: var(--color-white);
+        font-size: 1.35rem;
     }
 }

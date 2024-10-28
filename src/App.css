@@ -34,3 +34,19 @@
       padding: 2rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .section__padding {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero__padding {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero__padding {
+        padding: 1.5rem;
+    }
+}

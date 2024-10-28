@@ -1,7 +1,68 @@
 .header {
     position: relative;
     width: 100%;
-    height: 100vh;
     background-color: #121212;
     overflow: hidden;
+}
+
+.header .header__top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+.header__top .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__top .header-logo .logo-icon {
+    position: relative;
+    bottom: 5px;
+    color: var(--color-white);
+    font-size: 2.25rem;
+}
+
+.header__top .header-logo .logo-name {
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.header__top .menu-icon {
+    display: flex;
+    color: var(--color-white);
+    font-size: 2rem;
+    transition: color .15s ease-in, box-shadow .15s ease-in;
+}
+
+.header__top .menu-icon:hover {
+    cursor: pointer;
+    color: rgba(240, 240, 240, .65);
+    box-shadow: 0 0 30px 10px rgba(0,0,0,0.03);
+}
+
+.overlay-body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    transform: translateX(-100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.overlay-body.visible {
+    transform: translateX(0);
 }
