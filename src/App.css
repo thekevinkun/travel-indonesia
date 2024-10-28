@@ -45,7 +45,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     .hero__padding {
         padding: 1.5rem;
     }

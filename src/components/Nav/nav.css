@@ -126,12 +126,24 @@
 
 @media screen and (max-width: 480px) {
     .nav {
-        width: 300px;
+        width: 285px;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     .nav {
-        width: 250px;
+        width: 260px;
+        padding: 0 40px;
+    }
+
+    .nav .nav__list {
+        font-size: 1.65rem;
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav {
+        width: 225px;
     }
 }

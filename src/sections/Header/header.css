@@ -19,7 +19,7 @@
 .header__top .header-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
 }
 
 .header__top .header-logo .logo-icon {
@@ -39,13 +39,12 @@
     display: flex;
     color: var(--color-white);
     font-size: 2rem;
-    transition: color .15s ease-in, box-shadow .15s ease-in;
+    transition: color .15s ease-in;
 }
 
 .header__top .menu-icon:hover {
     cursor: pointer;
     color: rgba(240, 240, 240, .65);
-    box-shadow: 0 0 30px 10px rgba(0,0,0,0.03);
 }
 
 .overlay-body {
@@ -65,4 +64,32 @@
 
 .overlay-body.visible {
     transform: translateX(0);
+}
+
+@media screen and (max-width: 480px) {
+    .header__top .header-logo .logo-icon {
+        font-size: 2.15rem;
+    }
+    
+    .header__top .header-logo .logo-name {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header .header__top {
+        align-items: flex-start;
+    }
+
+    .header__top .header-logo .logo-icon {
+        font-size: 2rem;
+    }
+    
+    .header__top .header-logo .logo-name {
+        font-size: 1.15rem;
+    }
+
+    .header__top .menu-icon {
+        font-size: 1.85rem;
+    }
 }

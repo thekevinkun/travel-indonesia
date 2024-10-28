@@ -74,12 +74,11 @@
   width: 50%;
   height: 50%;
   cursor: pointer;
-  transition: color .15s ease-in, box-shadow .15s ease-in;
+  transition: color .15s ease-in;
 }
 
 .embla__button__svg:hover {
   color: rgba(240, 240, 240, .65);
-  box-shadow: 0 0 20px 15px rgba(0,0,0,0.05);
 }
 
 .embla__dots {
@@ -149,11 +148,17 @@
     height: 3.2rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color .15s ease-in;
+    transition: background-color .15s ease-in, box-shadow .15s ease-in;
   }
 
   .embla__button:hover {
     background-color: rgba(240, 240, 240, .80);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+  }
+
+  .embla__button:disabled {
+    background-color: transparent;
+    pointer-events: none;
   }
 
   .embla__button__svg {
@@ -164,6 +169,7 @@
 
   .embla__button:hover .embla__button__svg {
     color: rgba(8, 8, 8, 1);
+    box-shadow: none;
   }
 }
 
@@ -173,12 +179,12 @@
   }
 
   .embla__button {
-    width: 2.9rem;
-    height: 2.9rem;
+    width: 3rem;
+    height: 3rem;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .embla__buttons {
     padding: 1.5rem;
   }
@@ -186,5 +192,12 @@
   .embla__button {
     width: 2.6rem;
     height: 2.6rem;
+  }
+}
+
+@media screen and (max-height: 560px) { 
+  .embla__button {
+    width: 2.3rem;
+    height: 2.3rem;
   }
 }
