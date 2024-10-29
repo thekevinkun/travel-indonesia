@@ -138,12 +138,61 @@
 
     .nav .nav__list {
         font-size: 1.65rem;
-        margin-top: 6rem;
     }
 }
 
 @media screen and (max-width: 320px) {
     .nav {
         width: 225px;
+    }
+}
+
+@media screen and (max-height: 560px) { 
+    .nav .nav__list {
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .nav .nav__list {
+        font-size: 1.55rem;
+        margin-top: 6rem;
+    }
+
+    .nav .nav__list .nav__list-item {
+        margin: 0.65rem 0;
+    }
+}
+
+@media screen and (max-height: 440px) {
+    .nav .nav__list {
+        font-size: 1.45rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-height: 375px) { 
+    .nav__close {
+        top: 8%;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .nav .nav__list {
+        font-size: 1.25rem;
+    }
+
+    .nav .nav__list .nav__list-item {
+        margin: 0.45rem 0;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .nav .nav__list {
+        font-size: 1.15rem;
+    }
+
+    .nav .nav__list .nav__list-item {
+        margin: 0.375rem 0;
     }
 }

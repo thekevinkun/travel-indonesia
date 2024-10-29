@@ -119,10 +119,6 @@
         margin-top: 3rem;
     }
 
-    .hero__destination .social-media {
-        gap: 20px;
-    }
-
     .location .location-icon {
         font-size: 1.45rem;
     }
@@ -132,16 +128,17 @@
     }
 
     .destination .title {
-        font-size: 2.35rem;
+        font-size: 2.2rem;
     }
 
     .destination .description {
-        max-width: 300px;
+        max-width: 350px;
         font-size: 0.875rem;
     }
 
     .hero__destination .social-media {
         padding: 2rem 1.5rem;
+        gap: 20px;
     }
 }
 
@@ -166,12 +163,11 @@
     .destination .description {
         margin-top: 0.55rem;
         font-size: 0.75rem;
-        max-width: 260px;
+        max-width: 270px;
     }
     
     .hero__destination .social-media {
         gap: 16px;
-        padding: 1.5rem;
     }
 
     .hero__destination .social-media a {
@@ -180,25 +176,118 @@
 }
 
 @media screen and (max-height: 560px) {
+    .destination .btn {
+        margin-top: 2rem;
+    }
+
     .location .location-icon {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .location .name {
-        font-size: 0.65rem;
+        font-size: 0.95rem;
     }
 
     .destination .title {
-        margin-top: 0.45rem;
-        font-size: 1.75rem;
+        margin-top: 0.35rem;
+        font-size: 2.15rem;
     }
 
     .destination .description {
-        font-size: 0.65rem;
-        max-width: 230px;
+        font-size: 0.925rem;
     }
 
     .hero__destination .social-media a {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
+    }
+}
+
+@media screen and (max-width: 640px) and (max-height: 560px) {
+    .location .location-icon {
+        font-size: 1.1rem !important;
+    }
+
+    .location .name {
+        font-size: 0.7rem !important;
+    }
+
+    .destination .title {
+        margin-top: 0.55rem !important;
+        font-size: 1.65rem !important;
+    }
+
+    .destination .description {
+        font-size: 0.7rem !important;
+    }
+
+    .hero__destination .social-media a {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media screen and (max-width: 480px) and (max-height: 560px) { 
+    .hero__destination .social-media {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-height: 440px) {
+    .destination .btn {
+        display: none;
+    }
+
+    .location .location-icon {
+        font-size: 1.35rem;
+    }
+
+    .location .name {
+        font-size: 0.85rem;
+    }
+
+    .destination .title {
+        font-size: 2rem;
+    }
+
+    .destination .description {
+        margin-top: 0.35rem;
+        font-size: 0.825rem;
+    }
+
+    .hero__destination .social-media {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }   
+}
+
+@media screen and (max-width: 640px) and (max-height: 375px) {
+    .location .location-icon {
+        font-size: 1.45rem !important;
+    }
+
+    .location .name {
+        font-size: 0.85rem !important;
+    }
+
+    .destination .title {
+        margin-top: 0.45rem !important;
+        font-size: 1.85rem !important;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .location .location-icon {
+        font-size: 1.75rem;
+    }
+
+    .location .name {
+        font-size: 1rem;
+    }
+
+    .destination .title {
+        margin-top: 1rem;
+    }
+
+    .destination .description {
+        display: none;
     }
 }
