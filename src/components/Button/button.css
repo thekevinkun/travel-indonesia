@@ -88,13 +88,6 @@
     border-color: var(--btn-disabled-border-color);
 }
 
-@media screen and (max-width: 640px) {
-    .btn {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.925rem;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .btn {
         padding: 0.75rem 1rem;
@@ -102,23 +95,9 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
     .btn {
         padding: 0.75rem;
         font-size: 0.75rem;
     }
-}
-
-@media screen and (max-height: 560px) { 
-    .btn {
-        padding: 0.75rem 1rem;
-        font-size: 0.925rem;
-    }
-}
-
-@media screen and (max-width: 640px) and (max-height: 560px) { 
-    .btn {
-        padding: 0.55rem !important;
-        font-size: 0.675rem !important;
-    }
-}
+} */

@@ -35,11 +35,12 @@
 }
 
 .location .location-icon {
-    color: var(--color-white);
+    color: var(--color-sub-white);
     font-size: 1.65rem;
 }
 
 .location .name {
+    color: var(--color-sub-white);
     text-transform: uppercase;
 }
 
@@ -51,6 +52,7 @@
 }
 
 .destination .description {
+    color: var(--color-sub-white);
     margin-top: 0.75rem;
     text-align: justify;
 }
@@ -103,6 +105,8 @@
 
     .destination .btn {
         margin-top: 3rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.925rem;
     }
 
     .hero__destination .social-media {
@@ -143,10 +147,6 @@
 }
 
 @media screen and (max-width: 375px) {
-    .destination .btn {
-        margin-top: 2rem;
-    }
-
     .location .location-icon {
         font-size: 1.15rem;
     }
@@ -166,6 +166,12 @@
         max-width: 270px;
     }
     
+    .destination .btn {
+        margin-top: 2rem;
+        padding: 0.75rem;
+        font-size: 0.75rem;
+    }
+    
     .hero__destination .social-media {
         gap: 16px;
     }
@@ -176,10 +182,6 @@
 }
 
 @media screen and (max-height: 560px) {
-    .destination .btn {
-        margin-top: 2rem;
-    }
-
     .location .location-icon {
         font-size: 1.5rem;
     }
@@ -194,6 +196,12 @@
     }
 
     .destination .description {
+        font-size: 0.925rem;
+    }
+
+    .destination .btn {
+        margin-top: 2rem;
+        padding: 0.75rem 1rem;
         font-size: 0.925rem;
     }
 
@@ -218,6 +226,11 @@
 
     .destination .description {
         font-size: 0.7rem !important;
+    }
+
+    .hero__destination .btn {
+        padding: 0.55rem !important;
+        font-size: 0.675rem !important;
     }
 
     .hero__destination .social-media a {
