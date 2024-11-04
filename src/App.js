@@ -2,7 +2,8 @@ import "./App.css";
 
 import { useEffect, useState } from "react";
 
-import { Header, Hero } from "./sections";
+import { Header, Hero, AboutUs, UpcomingEvents, 
+  WatchMoments, Faq, Blog, Contact, Footer } from "./sections";
 
 const App = () => {
   const [viewHeight, setViewHeight] = useState("100vh");
@@ -30,8 +31,19 @@ const App = () => {
       <Hero 
         viewHeight={viewHeight}
       />
+
+      <main>
+        <AboutUs />
+        <UpcomingEvents />
+        <WatchMoments />
+        <Faq />
+        <Blog />
+        <Contact />
+      </main>
+
+      <Footer />
     </>
   )
 }
 
-export default App
+export default App;

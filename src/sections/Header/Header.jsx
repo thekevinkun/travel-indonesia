@@ -18,7 +18,7 @@ const Header = ({viewHeight}) => {
       <div className="header__top hero__padding">  
         <div className="header-logo">
               <GiPalmTree className="logo-icon"/>
-              <span className="logo-name">PacoTravel</span>
+              <span className="logo-name">Travel Indonesia</span>
         </div>
 
         <MdMenu
