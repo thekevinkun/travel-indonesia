@@ -8,9 +8,20 @@ import aboutUsImg1 from "../assets/about-us-img-1.jpg";
 import aboutUsImg2 from "../assets/about-us-img-2.jpg";
 
 import eventsBorobudur from "../assets/events-borobudur.jpg";
+import eventsBorobudurImg1 from "../assets/events-borobudur-img-1.jpg";
+import eventsBorobudurImg2 from "../assets/events-borobudur-img-2.jpg";
+
 import eventsBromo from "../assets/events-bromo.jpg";
+import eventsBromoImg1 from "../assets/events-bromo-img-1.jpg";
+import eventsBromoImg2 from "../assets/events-bromo-img-2.jpg";
+
 import eventsLabuanBajo from "../assets/events-labuan-bajo.jpg";
+import eventsLabuanBajoImg1 from "../assets/events-labuan-bajo-img-1.jpg";
+import eventsLabuanBajoImg2 from "../assets/events-labuan-bajo-img-2.jpg";
+
 import eventsUluwatu from "../assets/events-uluwatu.jpg";
+import eventsUluwatuImg1 from "../assets/events-uluwatu-img-1.jpg";
+import eventsUluwatuImg2 from "../assets/events-uluwatu-img-2.jpg";
 
 import videoImg from "../assets/video-img.jpg";
 import faqImg from "../assets/faq-img.jpg";
@@ -35,9 +46,20 @@ export default {
     aboutUsImg2,
 
     eventsBorobudur,
+    eventsBorobudurImg1,
+    eventsBorobudurImg2,
+
     eventsBromo,
+    eventsBromoImg1,
+    eventsBromoImg2,
+
     eventsLabuanBajo,
+    eventsLabuanBajoImg1,
+    eventsLabuanBajoImg2,
+    
     eventsUluwatu,
+    eventsUluwatuImg1,
+    eventsUluwatuImg2,
 
     videoImg,
     faqImg,
