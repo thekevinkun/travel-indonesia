@@ -9,7 +9,7 @@ const AboutUs = () => {
     <section id="about" className="section__padding">
       <div className="about">
         <div className="about__content">
-          <h2>About Us</h2>
+          <h2>ABOUT US</h2>
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
