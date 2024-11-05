@@ -1,0 +1,128 @@
+.events h2 {
+    text-align: center;
+}
+
+.events .events__description {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.events__list {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 10px;
+}
+
+.events__list .event {
+    position: relative;
+    z-index: 5;
+    background: #000;
+    min-height: 280px;
+    cursor: pointer;
+    transition: border .15s ease-in, opacity .15s ease-in;
+}
+
+.events__list .event:hover {
+    opacity: .7;
+}
+
+.event-active {
+    border: 12px solid var(--color-white);
+    pointer-events: none;
+}
+
+.event img {
+    opacity: .55;
+    pointer-events: none;
+}
+
+.events__list .event .event-price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem 1.5rem;
+    padding: 0.55rem 0.875rem;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid var(--color-white);
+    border-radius: 50px;
+    z-index: 7;
+    pointer-events: none;
+}
+
+.event .event-price p {
+    font-size: .875rem;
+    color: var(--color-white) !important;
+    font-weight: 400;
+}
+
+.events__list .event .event-description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1rem 1.5rem;
+    z-index: 7;
+    pointer-events: none;
+}
+
+.event .event-description h3,
+.event .event-description p {
+    color: var(--color-white) !important;
+}
+
+.event .event-description h3 {
+    font-size: 0.925rem;
+    font-weight: 500;
+}
+
+.event .event-description p {
+    font-size: 0.925rem;
+    margin-top: 0.65rem;
+}
+
+.events .event__information {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.event__information .information-description h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.event__information .information-description p {
+    margin-top: 1.5rem;
+    font-size: 0.925rem;
+}
+
+.event__information .information-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.event__information .information-gallery .gallery-image {
+    height: 196px;
+}
+
+@media screen and (max-width: 1115px) { 
+    .events__list .event {
+        cursor: default;
+        transition: none;
+    }
+    
+    .events__list .event:hover {
+        opacity: unset;
+    }
+
+    .events .event__information {
+        display: none;
+    }
+
+    .event-active {
+        border: none;
+        pointer-events: all;
+    }
+}
