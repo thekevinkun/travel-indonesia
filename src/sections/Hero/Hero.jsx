@@ -1,7 +1,8 @@
 import "./hero.css";
+import "../../components/EmblaHero/emblaHero.css";
 
 import { data } from "../../constants";
-import { Button, EmblaCarousel } from "../../components";
+import { Button, EmblaCarouselHero } from "../../components";
 
 import { FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -65,7 +66,7 @@ const getImage = (viewHeight) => {
 const Hero = ({viewHeight}) => {
   return (
     <section className="hero">
-      <EmblaCarousel getSlides={getImage(viewHeight)}/>
+      <EmblaCarouselHero getSlides={getImage(viewHeight)}/>
     </section>
   )
 }
