@@ -1,18 +1,44 @@
 {
   "files": {
-    "main.css": "/travel-indonesia/static/css/main.4d584e69.css",
-    "main.js": "/travel-indonesia/static/js/main.524f3b30.js",
+    "main.css": "/travel-indonesia/static/css/main.7e36d9df.css",
+    "main.js": "/travel-indonesia/static/js/main.1bc5acbb.js",
+    "static/media/video-labuan-bajo.mp4": "/travel-indonesia/static/media/video-labuan-bajo.8cc468d757a373a6f2eb.mp4",
     "static/media/nusa-penida.jpg": "/travel-indonesia/static/media/nusa-penida.10e8e586af8e832e570a.jpg",
+    "static/media/events-labuan-bajo-img-2.jpg": "/travel-indonesia/static/media/events-labuan-bajo-img-2.d35d25728cda5a8f1bc8.jpg",
+    "static/media/blog-komodo-img-2.jpg": "/travel-indonesia/static/media/blog-komodo-img-2.84fce7152cc3fea1a353.jpg",
+    "static/media/about-us-img-2.jpg": "/travel-indonesia/static/media/about-us-img-2.d72e42cef8ac5094ffb0.jpg",
+    "static/media/events-uluwatu-img-2.jpg": "/travel-indonesia/static/media/events-uluwatu-img-2.d52618d1f40f998ca8d0.jpg",
+    "static/media/events-uluwatu.jpg": "/travel-indonesia/static/media/events-uluwatu.50a580f776516a8f8266.jpg",
+    "static/media/video-img.jpg": "/travel-indonesia/static/media/video-img.2e194c3b2875789c3f50.jpg",
     "static/media/labuan-bajo.jpg": "/travel-indonesia/static/media/labuan-bajo.e94b8126b796865c584a.jpg",
+    "static/media/about-us-img-1.jpg": "/travel-indonesia/static/media/about-us-img-1.e1a0f42cf3e5878ea388.jpg",
+    "static/media/blog-bromo.jpg": "/travel-indonesia/static/media/blog-bromo.899d13994addc8346edb.jpg",
     "static/media/borobudur-temple.jpg": "/travel-indonesia/static/media/borobudur-temple.7ce69d4accca99aff0b7.jpg",
+    "static/media/moments-img-2.jpg": "/travel-indonesia/static/media/moments-img-2.a3eccea26657543b07fa.jpg",
+    "static/media/blog-bromo-img-2.jpg": "/travel-indonesia/static/media/blog-bromo-img-2.578af9d17122d89eedc8.jpg",
+    "static/media/events-uluwatu-img-1.jpg": "/travel-indonesia/static/media/events-uluwatu-img-1.176a08bf7c64016999d1.jpg",
+    "static/media/blog-bromo-img-1.jpg": "/travel-indonesia/static/media/blog-bromo-img-1.2180628a3bd8ea777d5a.jpg",
+    "static/media/events-borobudur-img-1.jpg": "/travel-indonesia/static/media/events-borobudur-img-1.ffc9ce0754c95d907f75.jpg",
+    "static/media/events-labuan-bajo.jpg": "/travel-indonesia/static/media/events-labuan-bajo.58b995c7e7e86048bf7e.jpg",
     "static/media/mount-bromo.jpg": "/travel-indonesia/static/media/mount-bromo.6e7534bd38f993537917.jpg",
+    "static/media/events-labuan-bajo-img-1.jpg": "/travel-indonesia/static/media/events-labuan-bajo-img-1.a483e60586ed55172e89.jpg",
+    "static/media/blog-komodo.jpg": "/travel-indonesia/static/media/blog-komodo.54328fe2369b26e9889c.jpg",
+    "static/media/events-bromo-img-1.jpg": "/travel-indonesia/static/media/events-bromo-img-1.759e18b830debc0d51e6.jpg",
+    "static/media/events-borobudur-img-2.jpg": "/travel-indonesia/static/media/events-borobudur-img-2.f5413da1a4ae1302db57.jpg",
+    "static/media/faq-img.jpg": "/travel-indonesia/static/media/faq-img.32eb69bbd23dcacde4e7.jpg",
     "static/media/derawan-island.jpg": "/travel-indonesia/static/media/derawan-island.c890e1b4b75597d6e175.jpg",
+    "static/media/moments-img-1.jpg": "/travel-indonesia/static/media/moments-img-1.31be37ace114e947dc36.jpg",
+    "static/media/events-bromo.jpg": "/travel-indonesia/static/media/events-bromo.de48a3bb62ee9e80f718.jpg",
+    "static/media/events-bromo-img-2.jpg": "/travel-indonesia/static/media/events-bromo-img-2.821ca8471f08b5fdef1a.jpg",
+    "static/media/blog-komodo-img-1.jpg": "/travel-indonesia/static/media/blog-komodo-img-1.983060de1a1e43e96916.jpg",
+    "static/media/events-borobudur.jpg": "/travel-indonesia/static/media/events-borobudur.8238ceed9c329c226b30.jpg",
+    "static/media/bg-world-map.png": "/travel-indonesia/static/media/bg-world-map.f650e7647e82c510bafc.png",
     "index.html": "/travel-indonesia/index.html",
-    "main.4d584e69.css.map": "/travel-indonesia/static/css/main.4d584e69.css.map",
-    "main.524f3b30.js.map": "/travel-indonesia/static/js/main.524f3b30.js.map"
+    "main.7e36d9df.css.map": "/travel-indonesia/static/css/main.7e36d9df.css.map",
+    "main.1bc5acbb.js.map": "/travel-indonesia/static/js/main.1bc5acbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d584e69.css",
-    "static/js/main.524f3b30.js"
+    "static/css/main.7e36d9df.css",
+    "static/js/main.1bc5acbb.js"
   ]
 }
