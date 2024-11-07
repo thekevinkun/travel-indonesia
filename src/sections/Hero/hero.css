@@ -62,28 +62,6 @@
     margin-top: 4rem;
 }
 
-.hero__destination .social-media {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 23px;
-    align-items: center;
-}
-
-.hero__destination .social-media a {
-    color: var(--color-white);
-    font-size: 1.5rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .hero__destination .social-media {
-      padding: 2rem;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .hero .hero__destination {
         max-width: 620px;
@@ -107,10 +85,6 @@
         margin-top: 3rem;
         padding: 0.75rem 1.5rem;
         font-size: 0.925rem;
-    }
-
-    .hero__destination .social-media {
-        gap: 20px;
     }
 }
 
@@ -139,11 +113,6 @@
         max-width: 350px;
         font-size: 0.875rem;
     }
-
-    .hero__destination .social-media {
-        padding: 2rem 1.5rem;
-        gap: 20px;
-    }
 }
 
 @media screen and (max-width: 375px) {
@@ -171,14 +140,6 @@
         padding: 0.75rem;
         font-size: 0.75rem;
     }
-    
-    .hero__destination .social-media {
-        gap: 16px;
-    }
-
-    .hero__destination .social-media a {
-        font-size: 1.35rem;
-    }
 }
 
 @media screen and (max-height: 560px) {
@@ -204,10 +165,6 @@
         padding: 0.75rem 1rem;
         font-size: 0.925rem;
     }
-
-    .hero__destination .social-media a {
-        font-size: 1.35rem;
-    }
 }
 
 @media screen and (max-width: 640px) and (max-height: 560px) {
@@ -232,16 +189,6 @@
         padding: 0.55rem !important;
         font-size: 0.675rem !important;
     }
-
-    .hero__destination .social-media a {
-        font-size: 1.2rem !important;
-    }
-}
-
-@media screen and (max-width: 480px) and (max-height: 560px) { 
-    .hero__destination .social-media {
-        padding: 1.5rem;
-    }
 }
 
 @media screen and (max-height: 440px) {
@@ -264,12 +211,7 @@
     .destination .description {
         margin-top: 0.35rem;
         font-size: 0.825rem;
-    }
-
-    .hero__destination .social-media {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }   
+    } 
 }
 
 @media screen and (max-width: 640px) and (max-height: 375px) {

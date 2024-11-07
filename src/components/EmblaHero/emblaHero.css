@@ -194,7 +194,7 @@
 
 @media screen and (max-width: 640px) {
   .embla-hero__buttons {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .embla-hero__button {
@@ -220,11 +220,6 @@
   .embla-hero__button {
     width: 2.5rem !important;
     height: 2.5rem !important;
-  } 
-
-  .embla-hero__buttons {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   } 
 }
 

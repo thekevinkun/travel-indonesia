@@ -4,10 +4,6 @@ import "../../components/EmblaHero/emblaHero.css";
 import { data } from "../../constants";
 import { Button, EmblaCarouselHero } from "../../components";
 
-import { FaYoutube } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { CiInstagram } from "react-icons/ci";
 import { TfiLocationPin } from "react-icons/tfi";
 
 const getImage = (viewHeight) => {
@@ -41,21 +37,6 @@ const getImage = (viewHeight) => {
               title="Find Out More"
               variant="btn-red"
             />
-          </div>
-
-          <div className="social-media">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <FaFacebookF />
-            </a>
-            <a href="https://instagram.com/thekevinkun" target="_blank" rel="noreferrer">
-              <CiInstagram />
-            </a>
-            <a href="https://twitter.com/thekevinkun" target="_blank" rel="noreferrer">
-              <FaTwitter />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer">
-              <FaYoutube />
-            </a>
           </div>
         </div>
       </div>
