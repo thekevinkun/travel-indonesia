@@ -21,7 +21,7 @@ const AboutUs = () => {
           <Button 
             type="button"
             title="More"
-            variant="btn-yellow"
+            variant="btn-red"
           />
         </div>
 
@@ -59,7 +59,7 @@ const AboutUs = () => {
         <Button 
           type="button"
           title="More"
-          variant="btn-yellow"
+          variant="btn-red"
         />
       </div>
     </section>

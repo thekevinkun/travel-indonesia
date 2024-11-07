@@ -51,7 +51,7 @@
 }
 
 .blog-views_read a:hover {
-    color: var(--color-hover-gray);
+    color: var(--color-red);
 }
 
 .blog__collection .blog__collection-content .blog-image {
@@ -73,6 +73,7 @@
 }
 
 .blog__collection-images .airplane-icon {
+    color: var(--color-red);
     font-size: 1.35rem;
 }
 
@@ -82,7 +83,7 @@
 }
 
 .blog__collection-images .more-blog .loc-icon {
-    color: #ffc107;
+    color: var(--color-red);
     margin-top: 0.25rem;
 }
 
@@ -92,7 +93,7 @@
 }
 
 .more-blog a:hover {
-    color: var(--color-hover-gray);
+    color: var(--color-red);
 }
 
 .blog__collection-images .image {

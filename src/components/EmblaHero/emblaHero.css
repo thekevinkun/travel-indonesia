@@ -77,7 +77,7 @@
 }
 
 .embla-hero__button__svg:hover {
-  color: rgb(195, 195, 195);
+  color: var(--color-red);
 }
 
 .embla-hero__button:disabled .embla-hero__button__svg {
@@ -165,7 +165,7 @@
   }
 
   .embla-hero__button:hover {
-    background-color: rgba(240, 240, 240, .80);
+    background-color: rgba(240, 240, 240, 1);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
   }
 
@@ -182,7 +182,7 @@
   }
 
   .embla-hero__button:hover .embla-hero__button__svg {
-    color: rgba(8, 8, 8, 1);
+    color: var(--color-red);
     box-shadow: none;
   }
 

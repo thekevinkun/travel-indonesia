@@ -39,7 +39,7 @@ const getImage = (viewHeight) => {
             <Button 
               type="button"
               title="Find Out More"
-              variant="btn-yellow"
+              variant="btn-red"
             />
           </div>
 

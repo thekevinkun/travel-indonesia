@@ -51,12 +51,12 @@
 
 .information-email a {
     font-weight: 500;
-    color: var(--color-yellow);
+    color: var(--color-red);
     text-decoration: underline;
 }
 
 .information-email a:hover {
-    color: var(--color-hover-gray);
+    color: var(--color-hover-red);
 }
 
 .contact .contact__content .contact__content-form {

@@ -42,7 +42,12 @@
 .moments__content .moments__content-image a {
     margin-top: 2.75rem;
     text-decoration: underline;
+    color: var(--color-red);
     font-weight: 500;
+}
+
+.moments__content .moments__content-image a:hover {
+    color: var(--color-hover-red);
 }
 
 .moments__content .moments__content-video {

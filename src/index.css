@@ -8,8 +8,9 @@
     --color-black: #121212;
     --color-sub-black: #1F1F1F;
     --color-gray: #AAAAAA;
-    --color-yellow: #FFC107;
+    --color-red: #BA0208;
 
+    --color-hover-red: #960206;
     --color-hover-gray: #a3a3a3;
 }
 

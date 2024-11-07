@@ -34,7 +34,7 @@ const Contact = () => {
             <Button 
               type="button"
               title="SEND"
-              variant="btn-yellow"
+              variant="btn-red"
             />
           </div>
         </div>

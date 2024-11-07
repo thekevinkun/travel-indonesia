@@ -41,7 +41,7 @@
 }
 
 .faq__content-ask .ask-icon {
-    color: #ffc107;
+    color: var(--color-red);
     font-size: 0.95rem;
 }
 
@@ -49,6 +49,10 @@
     font-size: 1.15rem;
     font-weight: 600;
     text-decoration: underline;
+}
+
+.faq__content-ask a:hover {
+    color: var(--color-red);
 }
 
 @media screen and (max-width: 980px) {
