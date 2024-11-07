@@ -1,0 +1,123 @@
+.contact {
+    position: relative;
+    margin: 6rem 0;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../assets/bg-world-map.png");
+    z-index: 5;
+}
+
+.contact .contact-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) calc((50vw - 170px) - 340px), rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%)
+}
+
+.contact .contact__content {
+    position: relative;
+    padding: 6rem 2rem;
+    max-width: 780px;
+    margin: 0 auto;
+    z-index: 7;
+}
+
+.contact__content h2 {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.contact .contact__content .contact__content-information {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.contact__content-information p,
+.contact__content-information a {
+    color: var(--color-white);
+}
+
+.contact__content-information .information-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information-email a {
+    font-weight: 500;
+    color: var(--color-yellow);
+    text-decoration: underline;
+}
+
+.information-email a:hover {
+    color: var(--color-hover-gray);
+}
+
+.contact .contact__content .contact__content-form {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+@media screen and (max-width: 1024px) { 
+    .contact { 
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .contact { 
+        margin: 4rem 0;
+    }
+
+    .contact .contact-overlay {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) calc((50vw - 170px) - 340px), rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 100%)
+    }
+
+    .contact .contact__content {
+        max-width: 100%;
+    }
+
+    .contact .contact__content .contact__content-information {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    .contact__content-information .information-email {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 15px;
+        row-gap: 8px;
+    }
+
+    .contact .contact__content .contact__content-form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .contact { 
+        margin: 2rem 0;
+    }
+
+    .contact .contact__content {
+        position: relative;
+        padding: 4rem 1.5rem;
+    }
+
+    .information-email a {
+        font-size: 0.875rem;
+    }
+}

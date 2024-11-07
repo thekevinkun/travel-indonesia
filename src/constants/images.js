@@ -36,6 +36,7 @@ import blogKomodo from "../assets/blog-komodo.jpg";
 import blogKomodoImg1 from "../assets/blog-komodo-img-1.jpg";
 import blogKomodoImg2 from "../assets/blog-komodo-img-2.jpg";
 
+import bgWorldMap from "../assets/bg-world-map.png";
 
 
 export default {
@@ -75,5 +76,7 @@ export default {
     blogBromoImg2,
     blogKomodo,
     blogKomodoImg1,
-    blogKomodoImg2
+    blogKomodoImg2,
+
+    bgWorldMap
 }
