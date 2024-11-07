@@ -1,0 +1,210 @@
+.blog h2,
+.blog .blog-title_description {
+    text-align: center;
+}
+
+.blog .blog-title_description {
+    margin-top: 2rem;
+}
+
+.blog .blog-container {
+    margin-top: 3rem;
+}
+
+.blog__collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    column-gap: 80px;
+}
+
+.blog__collection .blog__collection-content > *:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.blog__collection .blog__collection-content .blog-title {
+    font-weight: 500;
+}
+
+.blog__collection .blog__collection-content p.blog-description {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog__collection .blog__collection-content .blog-views_read {
+    margin-top: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__collection-content .blog-views_read p {
+    font-size: 0.875rem;
+}
+
+.blog__collection-content .blog-views_read a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.blog-views_read a:hover {
+    color: var(--color-hover-gray);
+}
+
+.blog__collection .blog__collection-content .blog-image {
+    margin-top: 2rem;
+    height: 250px;
+    background: #000;
+}
+
+.blog__collection-content .blog-image img {
+    opacity: .75;
+}
+
+.blog__collection .blog__collection-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 180px);
+    align-items: center;
+    justify-items: center;
+}
+
+.blog__collection-images .airplane-icon {
+    font-size: 1.35rem;
+}
+
+.blog__collection-images .more-blog {
+    display: flex;
+    gap: 8px;
+}
+
+.blog__collection-images .more-blog .loc-icon {
+    color: #ffc107;
+    margin-top: 0.25rem;
+}
+
+.blog__collection-images .more-blog a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.more-blog a:hover {
+    color: var(--color-hover-gray);
+}
+
+.blog__collection-images .image {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.blog__collection-images .image img {
+    opacity: .75;
+}
+
+@media screen and (max-width: 1024px) {
+    .blog__collection {
+        column-gap: 65px;
+    }
+
+    .blog__collection .blog__collection-content .blog-image {
+        height: 220px;
+    }
+
+    .blog__collection .blog__collection-images {
+        grid-template-rows: repeat(2, 175px);
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .blog {
+        position: relative;
+    }
+    
+    .blog__collection {
+        row-gap: 50px;
+    }   
+
+    .blog__collection .blog__collection-content .blog-image {
+        height: 280px;
+    }
+
+    .blog__collection .blog__collection-images {
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .blog__collection {
+        row-gap: 35px;
+    }   
+
+    .blog__collection .blog__collection-images {
+        grid-template-rows: repeat(2, 175px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog {
+        padding-bottom: 3rem !important;
+    }
+
+    .blog__collection {
+        grid-template-columns: 1fr;
+    }
+
+    .blog__collection .blog__collection-content .blog-image {
+        height: 180px;
+    }
+
+    .blog__collection .blog__collection-images {
+        grid-template-rows: repeat(2, 125px);
+    }
+
+    .blog__collection-images .airplane-icon {
+        font-size: 1rem;
+    }
+
+    .blog__collection-images .more-blog .loc-icon {
+       font-size: 0.85rem;
+    }
+    
+    .blog__collection-images .more-blog a {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blog {
+        padding-bottom: 5rem !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .blog__collection .blog__collection-content .blog-title {
+        font-size: 0.925rem;
+    }
+    
+    .blog__collection .blog__collection-content p.blog-description {
+        font-size: 0.825rem;
+    }
+
+    .blog__collection-content .blog-views_read p {
+        font-size: 0.785rem;
+    }
+    
+    .blog__collection-content .blog-views_read a {
+        font-size: 0.875rem;
+    }
+
+    .blog__collection .blog__collection-content .blog-image {
+        height: 145px;
+    }
+
+    .blog__collection .blog__collection-images {
+        grid-template-rows: repeat(2, 100px);
+    }
+}
