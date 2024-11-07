@@ -36,7 +36,6 @@ const WatchMoments = () => {
               type="video/mp4"
               loop
               controls={false}
-              muted
             />
 
             <div className="content-video_overlay">
