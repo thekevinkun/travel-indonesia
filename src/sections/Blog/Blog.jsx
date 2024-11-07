@@ -51,7 +51,7 @@ const getBlogs = () => {
 
 const Blog = () => {
   return (
-    <section className="blog section__padding">
+    <section id="blog" className="blog section__padding">
       <h2>BLOG</h2>
       <p className="blog-title_description">
         We collect for you the most top news from the world of tourism

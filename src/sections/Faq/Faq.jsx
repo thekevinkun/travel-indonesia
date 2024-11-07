@@ -8,7 +8,7 @@ import { TbLocationFilled } from "react-icons/tb";
 
 const Faq = () => {
   return (
-    <section className="faq section__padding">
+    <section id="faq" className="faq section__padding">
         <div className="faq__image">
           <img src={images.faqImg} alt="Faq background" />
         </div>

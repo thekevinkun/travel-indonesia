@@ -3,7 +3,7 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
         <div className="contact-overlay"></div>
         
         <div className="contact__content">

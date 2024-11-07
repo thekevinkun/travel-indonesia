@@ -12,7 +12,7 @@ const UpcomingEvents = () => {
   }
 
   return (
-    <section className="events section__padding">
+    <section id="events" className="events section__padding">
         <h2>UPCOMING EVENTS</h2>
 
         <p className="events__description">Here are the events that attract our travelers</p>

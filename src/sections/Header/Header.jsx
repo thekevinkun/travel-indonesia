@@ -12,6 +12,7 @@ const Header = ({viewHeight}) => {
 
   return (
     <header
+      id="home"
       style={{height: viewHeight}}  
       className="header"
     >

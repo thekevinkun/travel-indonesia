@@ -11,7 +11,7 @@ const WatchMoments = () => {
   const videoRef = useRef(null);
 
   return (
-    <section className="moments section__padding">
+    <section id="moments" className="moments section__padding">
         <h2>
           YOU CAN <span><img src={images.momentsImg2} alt="Indonesia nature"/></span>{" "} 
           WATCH THE BEST MOMENTS FROM <span><img src={images.momentsImg1} alt="Indonesia nature"/></span> 
@@ -21,7 +21,7 @@ const WatchMoments = () => {
         <div className="moments__content">
           <div className="moments__content-image">
             <div className="content-image">
-              <img src={images.momentsVideoImg} slt="Travel video" />
+              <img src={images.momentsVideoImg} alt="Travel video" />
             </div>
 
             <a href="#video">
