@@ -12,7 +12,7 @@ import { TfiLocationPin } from "react-icons/tfi";
 
 const getImage = (viewHeight) => {
   return data.destinations.map((item) => (
-    <div key={item.title}className="embla__slide">
+    <div key={item.title}className="embla-hero__slide">
       <div 
         style={{
           backgroundSize: "cover",
@@ -21,7 +21,7 @@ const getImage = (viewHeight) => {
           backgroundImage: `url(${item.image})`,
           height: viewHeight
         }} 
-        className="embla__slide__number"
+        className="embla-hero__slide__number"
       >
         <div className="hero-overlay"></div>
 

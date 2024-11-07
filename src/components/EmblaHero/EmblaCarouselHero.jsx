@@ -24,26 +24,26 @@ const EmblaCarouselHero = ({getSlides}) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <section className="embla-hero">
+      <div className="embla-hero__viewport" ref={emblaRef}>
+        <div className="embla-hero__container">
             {getSlides}
         </div>
       </div>
 
-      <div className="embla__controls">
-        <div className="embla__buttons">
+      <div className="embla-hero__controls">
+        <div className="embla-hero__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
-        <div className="embla__dots">
+        <div className="embla-hero__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
+              className={"embla-hero__dot".concat(
+                index === selectedIndex ? " embla-hero__dot--selected" : ""
               )}
             />
           ))}
