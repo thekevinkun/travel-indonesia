@@ -9,15 +9,11 @@ import { GiPalmTree } from "react-icons/gi";
 import { CiInstagram } from "react-icons/ci";
 import { FaYoutube, FaTwitter, FaFacebookF } from "react-icons/fa";
 
-const Header = ({viewHeight}) => {
+const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header
-      id="home"
-      style={{height: viewHeight}}  
-      className="header"
-    >
+    <header id="home" className="header">
       <div className="header__top hero__padding">  
         <div className="header-logo">
             <GiPalmTree className="logo-icon"/>

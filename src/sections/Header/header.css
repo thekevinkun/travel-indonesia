@@ -1,6 +1,7 @@
 .header {
     position: relative;
     width: 100%;
+    min-height: 100svh;
     background-color: #121212;
     overflow: hidden;
 }
@@ -90,26 +91,30 @@
 @media screen and (max-width: 640px) {
     .header .header__social-media {
         gap: 20px;
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .header__top .header-logo .logo-icon {
-        font-size: 2.15rem;
-    }
-    
-    .header__top .header-logo .logo-name {
-        font-size: 1.45rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
     .header .header__top {
         align-items: flex-start;
     }
 
+    .header__top .header-logo {
+        gap: 1px;
+    }
+
+    .header__top .header-logo .logo-icon {
+        font-size: 2.25rem;
+    }
+    
+    .header__top .header-logo .logo-name {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
     .header__top .header-logo .logo-icon {
         font-size: 2rem;
     }

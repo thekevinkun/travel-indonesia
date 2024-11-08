@@ -6,7 +6,7 @@ import { Button, EmblaCarouselHero } from "../../components";
 
 import { TfiLocationPin } from "react-icons/tfi";
 
-const getImage = (viewHeight) => {
+const getImage = () => {
   return data.destinations.map((item) => (
     <div key={item.title}className="embla-hero__slide">
       <div 
@@ -14,8 +14,7 @@ const getImage = (viewHeight) => {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          backgroundImage: `url(${item.image})`,
-          height: viewHeight
+          backgroundImage: `url(${item.image})`
         }} 
         className="embla-hero__slide__number"
       >
@@ -44,10 +43,10 @@ const getImage = (viewHeight) => {
   ))
 }
 
-const Hero = ({viewHeight}) => {
+const Hero = () => {
   return (
     <section className="hero">
-      <EmblaCarouselHero getSlides={getImage(viewHeight)}/>
+      <EmblaCarouselHero getSlides={getImage()}/>
     </section>
   )
 }

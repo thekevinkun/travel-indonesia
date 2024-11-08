@@ -1,7 +1,7 @@
 .embla-hero {
   max-width: 100%;
   margin: auto;
-  --slide-height: 100vh;
+  --slide-height: 100svh;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
@@ -24,6 +24,7 @@
 }
 
 .embla-hero__slide__number {
+  min-height: var(--slide-height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +195,7 @@
 
 @media screen and (max-width: 640px) {
   .embla-hero__buttons {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
   }
 
   .embla-hero__button {
