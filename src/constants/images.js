@@ -23,6 +23,7 @@ import eventsUluwatu from "../assets/events-uluwatu.jpg";
 import eventsUluwatuImg1 from "../assets/events-uluwatu-img-1.jpg";
 import eventsUluwatuImg2 from "../assets/events-uluwatu-img-2.jpg";
 
+import videoPoster from "../assets/video-poster.png";
 import momentsImg1 from "../assets/moments-img-1.jpg";
 import momentsImg2 from "../assets/moments-img-2.jpg";
 import momentsVideoImg from "../assets/video-img.jpg";
@@ -65,6 +66,7 @@ export default {
     eventsUluwatuImg1,
     eventsUluwatuImg2,
 
+    videoPoster,
     momentsImg1,
     momentsImg2,
     momentsVideoImg,

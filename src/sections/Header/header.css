@@ -102,21 +102,21 @@
     }
 
     .header__top .header-logo {
-        gap: 1px;
+        gap: 0;
     }
 
     .header__top .header-logo .logo-icon {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
     
     .header__top .header-logo .logo-name {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
     }
 }
 
 @media screen and (max-width: 375px) {
     .header__top .header-logo .logo-icon {
-        font-size: 2rem;
+        font-size: 1.95rem;
     }
     
     .header__top .header-logo .logo-name {
@@ -136,19 +136,19 @@
     }
 }
 
-@media screen and (max-height: 560px) { 
+@media screen and (max-height: 576px) { 
     .header__social-media a {
         font-size: 1.35rem;
     }
 }
 
-@media screen and (max-width: 640px) and (max-height: 560px) { 
+@media screen and (max-width: 640px) and (max-height: 576px) { 
     .header__social-media a {
-        font-size: 1.2rem !important;
+        font-size: 1.25rem !important;
     }
 }
 
-@media screen and (max-height: 440px) { 
+@media screen and (max-height: 438px) { 
     .header .header__social-media {
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;

@@ -211,27 +211,32 @@
   }
 }
 
-@media screen and (max-height: 560px) {
+@media screen and (max-height: 576px) {
   .embla-hero__dots {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) and (max-height: 560px) { 
+@media screen and (max-width: 480px) and (max-height: 576px) { 
   .embla-hero__button {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
+    width: 2.55rem !important;
+    height: 2.55rem !important;
   } 
+
+  .embla-hero__buttons {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }    
 }
 
-@media screen and (max-height: 440px) {
+@media screen and (max-height: 438px) {
   .embla-hero__buttons {
       padding-top: 1rem;
       padding-bottom: 1rem;
   }    
 }
 
-@media screen and (max-width: 768px) and (max-height: 440px) {
+@media screen and (max-width: 768px) and (max-height: 438px) {
   .embla-hero__buttons {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;

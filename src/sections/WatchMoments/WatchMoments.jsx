@@ -34,6 +34,8 @@ const WatchMoments = () => {
               ref={videoRef}
               loop
               controls={false}
+              poster={images.videoPoster}
+              preload="none"
               playsInline>
               <source src={video} type="video/mp4" />
             </video>
