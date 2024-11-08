@@ -52,7 +52,6 @@
 
 .moments__content .moments__content-video {
     position: relative;
-    height: 100%;
 }
 
 .moments__content-video video {
@@ -122,8 +121,8 @@
     }
 
     .moments__content .moments__content-image .content-image {
-        width: 320px;
-        height: 220px;
+        width: 310px;
+        height: 210px;
     }
 
     .moments__content .moments__content-image a {
@@ -131,7 +130,7 @@
     }
 
     .moments__content-video video {
-        width: 455px;
+        width: 480px;
         height: 280px;
     }
 
@@ -142,8 +141,8 @@
 
 @media screen and (max-width: 870px) {
     .moments__content .moments__content-image .content-image {
-        width: 280px;
-        height: 180px;
+        width: 265px;
+        height: 165px;
     }
 
     .moments__content .moments__content-image a {
@@ -151,12 +150,12 @@
     }
 
     .moments__content-video video {
-        width: 395px;
-        height: 240px;
+        width: 400px;
+        height: 220px;
     }
 
     .content-video_overlay {
-        height: 240px;
+        height: 220px;
     }
 }
 
@@ -188,8 +187,8 @@
     }
 
     .moments__content .moments__content-image .content-image {
-        width: 400px;
-        height: 230px;
+        width: 420px;
+        height: 240px;
     }
 
     .moments__content .moments__content-image a {
@@ -203,7 +202,6 @@
 
     .content-video_overlay {
         height: auto;
-        inset: 8px;
     }
 }
 
@@ -232,7 +230,7 @@
     }
 
     .moments__content .moments__content-image .content-image {
-        width: 280px;
+        width: 285px;
         height: 170px;
     }
 

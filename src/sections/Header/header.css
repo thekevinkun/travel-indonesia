@@ -89,6 +89,10 @@
 }
 
 @media screen and (max-width: 640px) {
+    .header .header__top {
+        align-items: flex-start;
+    }
+    
     .header .header__social-media {
         gap: 20px;
         padding-top: 1.5rem !important;
@@ -97,30 +101,28 @@
 }
 
 @media screen and (max-width: 480px) {
-    .header .header__top {
-        align-items: flex-start;
-    }
-
     .header__top .header-logo {
         gap: 0;
     }
 
     .header__top .header-logo .logo-icon {
+        bottom: 9px;
         font-size: 2rem;
     }
     
     .header__top .header-logo .logo-name {
-        font-size: 1.45rem;
+        font-size: 1.465rem;
     }
 }
 
 @media screen and (max-width: 375px) {
     .header__top .header-logo .logo-icon {
-        font-size: 1.95rem;
+        bottom: 8px;
+        font-size: 1.9rem;
     }
     
     .header__top .header-logo .logo-name {
-        font-size: 1.25rem;
+        font-size: 1.325rem;
     }
 
     .header__top .menu-icon {
