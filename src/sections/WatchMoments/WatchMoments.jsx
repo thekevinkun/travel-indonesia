@@ -32,11 +32,11 @@ const WatchMoments = () => {
           <div className="moments__content-video">
             <video
               ref={videoRef}
-              src={video}
-              type="video/mp4"
               loop
               controls={false}
-            />
+              playsInline>
+              <source src={video} type="video/mp4" />
+            </video>
 
             <div className="content-video_overlay">
               <div

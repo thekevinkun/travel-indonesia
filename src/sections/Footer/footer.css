@@ -134,6 +134,10 @@
         flex: auto;
     }
 
+    .footer__content-list:last-child .content-list_link-list .link-item .link {
+        font-size: 1rem;
+    }
+
     .footer__contacts {
         margin-top: 3rem;
     }
