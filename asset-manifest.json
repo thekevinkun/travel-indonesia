@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/travel-indonesia/static/css/main.a9caf3ed.css",
+    "main.css": "/travel-indonesia/static/css/main.90f5372f.css",
     "main.js": "/travel-indonesia/static/js/main.e3e03134.js",
     "static/media/video-labuan-bajo.mp4": "/travel-indonesia/static/media/video-labuan-bajo.8cc468d757a373a6f2eb.mp4",
     "static/media/nusa-penida.jpg": "/travel-indonesia/static/media/nusa-penida.10e8e586af8e832e570a.jpg",
@@ -35,11 +35,11 @@
     "static/media/events-borobudur.jpg": "/travel-indonesia/static/media/events-borobudur.8238ceed9c329c226b30.jpg",
     "static/media/bg-world-map.png": "/travel-indonesia/static/media/bg-world-map.f650e7647e82c510bafc.png",
     "index.html": "/travel-indonesia/index.html",
-    "main.a9caf3ed.css.map": "/travel-indonesia/static/css/main.a9caf3ed.css.map",
+    "main.90f5372f.css.map": "/travel-indonesia/static/css/main.90f5372f.css.map",
     "main.e3e03134.js.map": "/travel-indonesia/static/js/main.e3e03134.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9caf3ed.css",
+    "static/css/main.90f5372f.css",
     "static/js/main.e3e03134.js"
   ]
 }
