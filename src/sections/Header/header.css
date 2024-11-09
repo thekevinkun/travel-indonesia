@@ -27,13 +27,13 @@
     position: relative;
     bottom: 10px;
     color: var(--color-white);
-    font-size: 2.275rem;
+    font-size: 2.3rem;
 }
 
 .header__top .header-logo .logo-name {
     font-family: var(--font-logo);
     font-weight: 700;
-    font-size: 1.65rem;
+    font-size: 1.7rem;
     background: var(--title-color-gradient);
     background-clip: text;
     -webkit-background-clip: text;
@@ -44,7 +44,7 @@
 .header__top .menu-icon {
     display: flex;
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 2.45rem;
     transition: color .15s ease-in;
 }
 
@@ -113,6 +113,10 @@
     .header__top .header-logo .logo-name {
         font-size: 1.5rem;
     }
+
+    .header__top .menu-icon {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -121,7 +125,7 @@
     }
     
     .header__top .header-logo .logo-name {
-        font-size: 1.45rem;
+        font-size: 1.35rem;
     }
 
     .header__top .menu-icon {
