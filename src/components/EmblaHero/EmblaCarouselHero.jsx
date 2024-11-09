@@ -1,4 +1,10 @@
+import "./emblaHero.css";
+
 import React from "react";
+import { motion } from "framer-motion";
+
+import { animation } from "../../constants";
+
 import { DotButton, useDotButton } from "./EmblaCarouselHeroDotButton";
 import {
   PrevButton,
@@ -6,7 +12,6 @@ import {
   usePrevNextButtons
 } from "./EmblaCarouselHeroArrowButtons";
 import useEmblaCarousel from "embla-carousel-react";
-import "./emblaHero.css";
 
 const OPTIONS = {};
 
@@ -31,13 +36,23 @@ const EmblaCarouselHero = ({getSlides}) => {
         </div>
       </div>
 
-      <div className="embla-hero__controls">
-        <div className="embla-hero__buttons">
+      <motion.div 
+        initial="hidden"
+        animate="visible"
+        className="embla-hero__controls"
+      >
+        <motion.div 
+          variants={animation.slideInFromRight(0.5)} 
+          className="embla-hero__buttons"
+        >
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
+        </motion.div>
 
-        <div className="embla-hero__dots">
+        <motion.div 
+          variants={animation.slideInFromRight(0.5)} 
+          className="embla-hero__dots"
+        >
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
@@ -47,8 +62,8 @@ const EmblaCarouselHero = ({getSlides}) => {
               )}
             />
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   )
 }

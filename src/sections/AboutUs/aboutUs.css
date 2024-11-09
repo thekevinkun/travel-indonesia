@@ -58,8 +58,9 @@
         width: 280px;
     }
 
-    .about__small-screen .btn {
+    .about__small-screen .about__description .btn {
         width: fit-content;
+        margin-top: 2rem;
     }
 }
 
@@ -72,6 +73,21 @@
     .about__small-screen .about__image .about__image-2 {
         width: 220px;
     }
+
+    .about__small-screen .about__description {
+        text-align: center;
+    }
+
+    .about__small-screen .about__description p {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 525px) { 
+    .about__small-screen .about__image .about__image-1,
+    .about__small-screen .about__image .about__image-2 {
+        width: 175px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -80,19 +96,25 @@
         gap: 15px;
     }
 
-    .about__small-screen .about__image .about__image-1,
-    .about__small-screen .about__image .about__image-2 {
-        width: 175px;
+    .about__small-screen .about__description .btn {
+        padding: 0.75rem 2rem;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 410px) {
     .about__small-screen .about__image {
-        gap: 15px;
+        gap: 10px;
     }
 
     .about__small-screen .about__image .about__image-1,
     .about__small-screen .about__image .about__image-2 {
         width: 130px;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    .about__small-screen .about__image .about__image-1,
+    .about__small-screen .about__image .about__image-2 {
+        width: 118px;
     }
 }

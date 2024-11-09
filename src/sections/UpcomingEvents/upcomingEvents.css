@@ -20,16 +20,21 @@
     background: #000;
     min-height: 280px;
     cursor: pointer;
-    transition: border .15s ease-in, opacity .15s ease-in;
+    transition: transform .15s ease-in, opacity .15s ease-in;
 }
 
 .events__list .event:hover {
-    opacity: .7;
+    opacity: .7 !important;
 }
 
 .event-active {
-    border: 12px solid var(--color-white);
     pointer-events: none;
+    transform: scale(1) !important;
+}
+
+.event-inactive {
+    pointer-events: all;
+    transform: scale(0.9) !important;
 }
 
 .event img {
@@ -121,8 +126,9 @@
         display: none;
     }
 
-    .event-active {
-        border: none;
+    .event-active,
+    .event-inactive {
+        transform: none;
         pointer-events: all;
     }
 }

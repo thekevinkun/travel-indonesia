@@ -1,8 +1,9 @@
 import "./upcomingEvents.css";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
-import { data } from "../../constants";
+import { data, animation } from "../../constants";
 
 const UpcomingEvents = () => {
   const [activeEvent, setActiveEvent] = useState("uluwatu");
@@ -13,16 +14,27 @@ const UpcomingEvents = () => {
 
   return (
     <section id="events" className="events section__padding">
-        <h2>UPCOMING EVENTS</h2>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={animation.slideInFromBottom}
+        >
+          <h2>UPCOMING EVENTS</h2>
 
-        <p className="events__description">Here are the events that attract our travelers</p>
+          <p className="events__description">Here are the events that attract our travelers</p>
+        </motion.div>
 
         <div className="events__list">
-          { data.events.map((item) => (
-              <div 
+          { data.events.map((item, i) => (
+              <motion.div 
                 key={item.id} 
                 id={item.id} 
-                className={`event ${activeEvent === item.id ? "event-active" : ""}`}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={animation.fadeIn(0.5 * i)}
+                className={`event ${activeEvent === item.id ? "event-active" : "event-inactive"}`}
                 onClick={(e) => handleClickEvent(e)}
               >
                 <div className="event-price">
@@ -35,11 +47,17 @@ const UpcomingEvents = () => {
                   <h3>{item.title}</h3>
                   <p>{item.day}</p>
                 </div>
-              </div>
+              </motion.div>
           ))}
         </div>
 
-        <div className="event__information">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={animation.slideInFromBottom}
+          className="event__information"
+        >
           <div className="information-description">
             <h4>{data.events.find(item => item.id === activeEvent).location}</h4>
             <p>{data.events.find(item => item.id === activeEvent).description}</p>
@@ -52,7 +70,7 @@ const UpcomingEvents = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
     </section>
   )
 }

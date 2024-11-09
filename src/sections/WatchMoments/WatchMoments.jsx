@@ -1,8 +1,9 @@
 import "./watchMoments.css";
 
 import { useState, useRef } from "react";
+import { motion } from "framer-motion";
 
-import { images, video } from "../../constants";
+import { images, animation, video } from "../../constants";
 
 import { BsPauseFill, BsFillPlayFill } from "react-icons/bs";
 
@@ -12,13 +13,24 @@ const WatchMoments = () => {
 
   return (
     <section id="moments" className="moments section__padding">
-        <h2>
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={animation.slideInFromRight(0.5)}
+        >
           YOU CAN <span><img src={images.momentsImg2} alt="Indonesia nature"/></span>{" "} 
           WATCH THE BEST MOMENTS FROM <span><img src={images.momentsImg1} alt="Indonesia nature"/></span> 
           {" "}TRAVELS
-        </h2>
+        </motion.h2>
 
-        <div className="moments__content">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={animation.slideInFromBottom}
+          className="moments__content"
+        >
           <div className="moments__content-image">
             <div className="content-image">
               <img src={images.momentsVideoImg} alt="Travel video" />
@@ -73,7 +85,7 @@ const WatchMoments = () => {
               ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-        </div>
+        </motion.div>
     </section>
   )
 }

@@ -1,9 +1,11 @@
 import "./blog.css";
 import "../../components/EmblaBlog/emblaBlog.css";
 
+import { motion } from "framer-motion";
+
 import { EmblaCarouselBlog } from "../../components";
 
-import { data } from "../../constants";
+import { data, animation } from "../../constants";
 
 import { ImAirplane } from "react-icons/im";
 import { TbLocationFilled } from "react-icons/tb";
@@ -12,7 +14,13 @@ const getBlogs = () => {
   return data.blogs.map((item) => (
     <div key={item.title} className="blog-container embla-blog__slide">
       <div className="blog__collection embla-blog__slide__number">
-        <div className="blog__collection-content">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={animation.slideInFromLeft(0.5)}
+          className="blog__collection-content"
+        >
           <p className="blog-date">{item.date}</p>
           <h3 className="blog-title">{item.title}</h3>
           <p className="blog-description">{item.blog}</p>
@@ -26,9 +34,15 @@ const getBlogs = () => {
           <div className="blog-image">
             <img src={item.image} alt="Blog preview"/>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="blog__collection-images">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={animation.slideInFromRight(0.5)}
+          className="blog__collection-images"
+        >
           <ImAirplane className="airplane-icon"/>
           
           <div className="image">
@@ -43,7 +57,7 @@ const getBlogs = () => {
             <TbLocationFilled className="loc-icon"/>
             <a href="#gotoblog">GO TO<br />BLOG</a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   ))
@@ -52,10 +66,17 @@ const getBlogs = () => {
 const Blog = () => {
   return (
     <section id="blog" className="blog section__padding">
-      <h2>BLOG</h2>
-      <p className="blog-title_description">
-        We collect for you the most top news from the world of tourism
-      </p>
+      <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={animation.slideInFromBottom}
+      >
+        <h2>BLOG</h2>
+        <p className="blog-title_description">
+          We collect for you the most top news from the world of tourism
+        </p>
+      </motion.div>
 
       <EmblaCarouselBlog getSlides={getBlogs()}/>
     </section>

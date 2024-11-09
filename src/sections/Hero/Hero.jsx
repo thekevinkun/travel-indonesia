@@ -1,7 +1,9 @@
 import "./hero.css";
 import "../../components/EmblaHero/emblaHero.css";
 
-import { data } from "../../constants";
+import { motion } from "framer-motion";
+
+import { data, animation } from "../../constants";
 import { Button, EmblaCarouselHero } from "../../components";
 
 import { TfiLocationPin } from "react-icons/tfi";
@@ -20,7 +22,12 @@ const getImage = () => {
       >
         <div className="hero-overlay"></div>
 
-        <div className="hero__destination hero__padding">
+        <motion.div 
+          initial="hidden"
+          animate="visible"
+          variants={animation.slideInFromLeft(0.5)} 
+          className="hero__destination hero__padding"
+        >
           <div className="destination">
             <div className="location">
               <TfiLocationPin className="location-icon"/>
@@ -37,7 +44,7 @@ const getImage = () => {
               variant="btn-red"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   ))

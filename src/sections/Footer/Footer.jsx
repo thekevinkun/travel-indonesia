@@ -1,6 +1,8 @@
 import "./footer.css"
 
-import { data } from "../../constants";
+import { motion } from "framer-motion";
+
+import { data, animation } from "../../constants";
 
 import { GiPalmTree } from "react-icons/gi";
 import { FaFacebook, FaTwitter, FaReddit, FaLinkedin } from "react-icons/fa";
@@ -8,7 +10,13 @@ import { FaFacebook, FaTwitter, FaReddit, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__padding">
+      <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={animation.slideInFromBottom}
+        className="footer__padding"
+      >
         <ul className="footer__content">
           <li className="footer__content-description">
             <h3 className="footer-title">
@@ -66,7 +74,7 @@ const Footer = () => {
         <div className="footer__copyright">
           © 2024 Kevinkun All rights reserver
         </div>
-      </div>  
+      </motion.div>  
     </footer>
   )
 }

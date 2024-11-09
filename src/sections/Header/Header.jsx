@@ -1,8 +1,10 @@
 import "./header.css";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { Nav } from "../../components";
+import { animation } from "../../constants";
 
 import { MdMenu } from "react-icons/md";
 import { GiPalmTree } from "react-icons/gi";
@@ -13,8 +15,16 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header id="home" className="header">
-      <div className="header__top hero__padding">  
+    <motion.header 
+      id="home" 
+      initial="hidden"
+      animate="visible"
+      className="header"
+    >
+      <motion.div 
+        variants={animation.slideInFromTop} 
+        className="header__top hero__padding"
+      >  
         <div className="header-logo">
             <GiPalmTree className="logo-icon"/>
             <span className="logo-name">Travel Indonesia</span>
@@ -24,9 +34,12 @@ const Header = () => {
           className="menu-icon" 
           onClick={() => setToggleMenu(true)}
         />
-      </div>
+      </motion.div >
 
-      <div className="header__social-media hero__padding">
+      <motion.div 
+        variants={animation.slideInFromBottom} 
+        className="header__social-media hero__padding"
+      >
         <a href="https://facebook.com" target="_blank" rel="noreferrer">
           <FaFacebookF />
         </a>
@@ -39,7 +52,7 @@ const Header = () => {
         <a href="https://youtube.com" target="_blank" rel="noreferrer">
           <FaYoutube />
         </a>
-      </div>
+      </motion.div>
 
       <Nav 
         toggleMenu={toggleMenu}
@@ -47,7 +60,7 @@ const Header = () => {
       />
 
       <div className={`overlay-body ${toggleMenu ? "visible" : ""}`}></div>
-    </header>
+    </motion.header>
   )
 }
 

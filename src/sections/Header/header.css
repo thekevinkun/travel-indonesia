@@ -107,26 +107,29 @@
 
     .header__top .header-logo .logo-icon {
         bottom: 9px;
-        font-size: 2rem;
+        font-size: 2.15rem;
     }
     
     .header__top .header-logo .logo-name {
-        font-size: 1.465rem;
+        font-size: 1.5rem;
+    }
+
+    .header__top .menu-icon {
+        font-size: 1.875rem;
     }
 }
 
 @media screen and (max-width: 375px) {
     .header__top .header-logo .logo-icon {
-        bottom: 8px;
-        font-size: 1.9rem;
+        font-size: 1.95rem;
     }
     
     .header__top .header-logo .logo-name {
-        font-size: 1.325rem;
+        font-size: 1.45rem;
     }
 
     .header__top .menu-icon {
-        font-size: 1.85rem;
+        font-size: 1.775rem;
     }
 
     .header .header__social-media {
