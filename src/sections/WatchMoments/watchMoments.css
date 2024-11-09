@@ -1,3 +1,7 @@
+.moments {
+    overflow: hidden;
+}
+
 .moments h2 {
     font-size: 3.8415rem;
     text-align-last: justify;

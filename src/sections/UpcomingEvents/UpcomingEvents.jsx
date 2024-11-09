@@ -27,13 +27,16 @@ const UpcomingEvents = () => {
 
         <div className="events__list">
           { data.events.map((item, i) => (
+            <motion.div
+              key={item.id} 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={animation.fadeIn(0.5 * i)}
+              className="event__wrapper"
+            >
               <motion.div 
-                key={item.id} 
                 id={item.id} 
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={animation.fadeIn(0.5 * i)}
                 className={`event ${activeEvent === item.id ? "event-active" : "event-inactive"}`}
                 onClick={(e) => handleClickEvent(e)}
               >
@@ -48,6 +51,7 @@ const UpcomingEvents = () => {
                   <p>{item.day}</p>
                 </div>
               </motion.div>
+            </motion.div>
           ))}
         </div>
 

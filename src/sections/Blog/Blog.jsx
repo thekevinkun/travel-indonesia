@@ -14,13 +14,7 @@ const getBlogs = () => {
   return data.blogs.map((item) => (
     <div key={item.title} className="blog-container embla-blog__slide">
       <div className="blog__collection embla-blog__slide__number">
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={animation.slideInFromLeft(0.5)}
-          className="blog__collection-content"
-        >
+        <div className="blog__collection-content">
           <p className="blog-date">{item.date}</p>
           <h3 className="blog-title">{item.title}</h3>
           <p className="blog-description">{item.blog}</p>
@@ -34,15 +28,9 @@ const getBlogs = () => {
           <div className="blog-image">
             <img src={item.image} alt="Blog preview"/>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={animation.slideInFromRight(0.5)}
-          className="blog__collection-images"
-        >
+        <div className="blog__collection-images">
           <ImAirplane className="airplane-icon"/>
           
           <div className="image">
@@ -57,7 +45,7 @@ const getBlogs = () => {
             <TbLocationFilled className="loc-icon"/>
             <a href="#gotoblog">GO TO<br />BLOG</a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   ))
@@ -78,7 +66,14 @@ const Blog = () => {
         </p>
       </motion.div>
 
-      <EmblaCarouselBlog getSlides={getBlogs()}/>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={animation.slideInFromBottom}
+      >
+        <EmblaCarouselBlog getSlides={getBlogs()}/>
+      </motion.div>
     </section>
   )
 }

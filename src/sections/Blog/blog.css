@@ -1,3 +1,7 @@
+.blog {
+    overflow: hidden;
+}
+
 .blog h2,
 .blog .blog-title_description {
     text-align: center;
