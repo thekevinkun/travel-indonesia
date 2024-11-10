@@ -25,7 +25,7 @@ const getImage = () => {
         <motion.div 
           initial="hidden"
           animate="visible"
-          variants={animation.slideInFromLeft(0.5)} 
+          variants={animation.fadeIn(0.5)} 
           className="hero__destination hero__padding"
         >
           <div className="destination">

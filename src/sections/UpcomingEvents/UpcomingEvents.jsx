@@ -32,7 +32,7 @@ const UpcomingEvents = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              variants={animation.fadeIn(0.5 * i)}
+              variants={animation.fadeIn(0.5 * ((i + 1) / 2))}
               className="event__wrapper"
             >
               <motion.div 
